@@ -3,11 +3,43 @@
 @section('title', 'Agenda')
 
 @section('container')
-<div class="container">
-    <div class="row">
-        <div class="col-10">
-            <h1 class="mt-3">Agenda</h1>
-        </div>
+
+{{-- Body Awal --}}
+  <div class="container p-4">
+  <div class="row">
+    {{-- Content Awal --}}
+    <div class="col-md-8 border rounded pt-4" style="text-align: justify">
+      <h1 class="fw-bold text-center">AGENDA DESA</h1>
+      <br>
+      <h5>TANGGAL</h5>
+      <iframe src="https://calendar.google.com/calendar/embed?src=5nbb6o4q8l01222fl3n1ugr5bs%40group.calendar.google.com&ctz=Asia%2FJakarta" style="border: 0" width="715" height="600" frameborder="0" scrolling="no"></iframe>
+      
+      
+
     </div>
-</div>
+    {{-- Content Akhir --}}
+
+    {{-- Sidebar Awal --}}
+    <div class="col-md-4 border rounded pt-4">
+
+      <form class="d-flex">
+        <input class="form-control me-3" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    
+      <div class="text-center p-4">
+        <img src="5.jpg" alt="">
+      </div>
+
+      <div class="text-center p-4">
+        <img src="6.png" alt="">
+      </div>
+        
+    </div>
+    {{-- Sidebar Akhir --}}
+
+  </div>
+
+  </div>
+{{-- Body Akhir --}}
 @endsection

@@ -1,0 +1,111 @@
+#toTop {
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    z-index: 1041;
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    line-height: 40px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #4c4f53;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 14px 28px -4px rgb(14 17 20 / 15%);
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+} 
+
+.widget {
+    color: #FFF;
+    padding: 8px 10px;
+    margin: 25px auto 1px;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: none;
+    background: repeating-linear-gradient(-45deg,#343a40 0,#343a40 60%,#212529 0,#212529 350px);
+    font-family: 'Open Sans',sans-serif;
+}
+
+a {
+    text-decoration: none!important;
+}
+
+.img-thumb {
+    padding: .25rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    width: 130px;
+    height: 75px;
+}
+
+.carousel-item {
+    height: 32rem;
+    overflow:hidden;
+    background: #000;
+}
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+.carousel-caption {
+    bottom: 180px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+/* .carousel-item {
+    height: 32rem;
+    background: #000;
+    color: white;
+    position: relative;
+}
+.overlay-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+} */
+
+
+/* .carousel-item {
+    height: 32rem;
+    min-height: 300px;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.carousel-item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.7;
+}
+.carousel-caption {
+    bottom: 180px;
+    padding-left: 100px;
+    padding-right: 100px;
+} */
+
+
+
+/* .carousel-item {
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+} */

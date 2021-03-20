@@ -45,4 +45,28 @@ class PagesController extends Controller
     {
         return view('gallery');
     }
+    public function sejarah()
+    {
+        return view('sejarah');
+    }
+    public function visimisi()
+    {
+        return view('visimisi');
+    }
+    public function artilambang()
+    {
+        return view('artilambang');
+    }
+    public function wilayah()
+    {
+        return view('wilayah');
+    }
+    public function struktur()
+    {
+        return view('struktur');
+    }
+    public function dasarhukum()
+    {
+        return view('dasarhukum');
+    }
 }
