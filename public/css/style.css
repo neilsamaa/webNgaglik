@@ -18,7 +18,12 @@
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
-} 
+}
+
+.img-center {
+    text-align: center;
+    padding: 5px;
+}
 
 .widget {
     color: #FFF;

@@ -9,12 +9,10 @@
   <div class="row">
     {{-- Content Awal --}}
     <div class="col-md-8 border rounded pt-4" style="text-align: justify">
-      <br>
-      <h5>Dasar Hukum</h5>
+      <hr>
+      <h1 class="text-center">DASAR HUKUM</h1>
+      <hr>
       <ol>
-          <li>Undang-Undang Nomor 15 Tahun 1950 tentang Pembentukan Daerah Kabupaten dalam Lingkungan Daerah Istimewa Yogyakarta jo.
-              Peraturan Pemerintah Nomor 32 Tahun 1950 (Berita Negara tanggal 8 Agustus 1950);
-          </li>
           <li>
             Undang-Undang Nomor 32 Tahun 2004 tentang Pemerintahan Daerah (Lembaran Negara Republik Indonesia Tahun 2004, Nomor 125,
             Tambahan Lembaran Negara Nomor 4437) sebagaimana telah beberapa kali diubah terakhir dengan Undang-Undang Nomor 12 Tahun

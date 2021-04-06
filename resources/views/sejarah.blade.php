@@ -10,6 +10,13 @@
   <div class="row">
     {{-- Content Awal --}}
     <div class="col-md-8 border rounded pt-4" style="text-align: justify">
+      <hr>
+      <h1 class="text-center">SEJARAH DESA NGAGLIK</h1>
+      <hr>
+      <div class="text-center">
+          <img src="/img/sejarah.jpg" class="figure-img img-fluid rounded" alt="...">
+      </div>
+
       <br>
       <h5>Asal Usul Kelurahan Ngaglik</h5>
       <p>Titik awal mula (Starting Time) dari sejarah Kota Batu adalah ketika Batu memperoleh statusnya sebagai kota pada tanggal 17
@@ -174,7 +181,9 @@
       </ul>
 
       <br>
-      <h5>Daftar Nama Kepala Desa / Lurah Kelurahan Ngaglik Kecamatan Batu</h5>
+      <hr>
+      <h5 class="text-center">Daftar Nama Kepala Desa / Lurah Kelurahan Ngaglik Kecamatan Batu</h5>
+      <hr>
       <table class="table">
         <thead>
           <tr>
@@ -202,6 +211,12 @@
             <td>Mbah SALIM</td>
             <td>Tidak diketahui</td>
             <td></td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
           </tr>
         </tbody>
       </table>

@@ -9,6 +9,16 @@
   <div class="row">
     {{-- Content Awal --}}
     <div class="col-md-8 border rounded pt-4" style="text-align: justify">
+
+      <hr>
+      <h1 class="text-center">PROFIL WILAYAH DESA</h1>
+      <hr>
+
+      <h5>Peta Desa Ngaglik</h5>
+      <p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31617.39158327026!2d112.49988478242655!3d-7.87686062586097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78872e19f2f877%3A0xb7808ff2ef50dab4!2sNgaglik%2C%20Kec.%20Batu%2C%20Kota%20Batu%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1617356244106!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </p>
+      
       <br>
       <h5>Letak Geografis</h5>
       <p>

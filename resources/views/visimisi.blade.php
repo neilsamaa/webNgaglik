@@ -1,6 +1,6 @@
 @extends('layout/main')
 
-@section('title', 'Sejarah Desa Ngaglik')
+@section('title', 'Visi dan Misi Desa Ngaglik')
 
 @section('container')
 
@@ -9,11 +9,16 @@
   <div class="row">
     {{-- Content Awal --}}
     <div class="col-md-8 border rounded pt-4" style="text-align: justify">
+      <hr>
+      <h1 class="text-center">VISI & MISI</h1>
+      <hr>
+      <iframe width="100%" height="400" src="https://www.youtube.com/embed/9kpHLkXzAxU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
       <br>
-      <h5>VISI</h5>
-      <p>Terwujudnya Kelurahan Ngaglik yang tumbuh berkembang dengan Semangat gotong royong, dan cita-cita tinggi menuju masyarakat
+      <br>
+      <h5 class="text-center">VISI</h5>
+      <p class="text-center">Terwujudnya Kelurahan Ngaglik yang tumbuh berkembang dengan Semangat gotong royong, dan cita-cita tinggi menuju masyarakat
         makmur dengan daya dukung sinergis antara pemerintah dan masyarakat.</p>
-      <h5>MISI</h5>
+      <h5 class="text-center">MISI</h5>
       <ol>
         <li>Bhinneka Tunggal Ika sebagai dasar menciptakan lingkungan yang damai,sehat dan sejahtera.</li>
         <li>Pelayanan publik secara optimal dalam melayani masyarakat.</li>

@@ -9,10 +9,11 @@
   <div class="row">
     {{-- Content Awal --}}
     <div class="col-md-8 border rounded pt-4" style="text-align: justify">
-      <h1 class="fw-bold text-center">ARTI LAMBANG DESA</h1>
-      <br>
-      <h5>Simbol Kelurahan Ngaglik</h5>
-      <div class="container" style="text-align: center">
+      <hr>
+      <h1 class="text-center">ARTI LAMBANG DESA</h1>
+      <hr>
+      <h5 class="text-center">Simbol Kelurahan Ngaglik</h5>
+      <div class="text-center">
       <figure class="figure">
         <img src="/img/lambang-desa.png" class="figure-img img-fluid rounded" alt="...">
         <figcaption class="figure-caption"><figure class="text-center">
@@ -22,7 +23,8 @@
           <figcaption class="blockquote-footer">
             Slogan Kelurahan Ngaglik
           </figcaption>
-        </figure></figcaption>
+        </figure>
+      </figcaption>
       </figure>
     </div>
 

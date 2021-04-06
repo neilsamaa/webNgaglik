@@ -1,9 +1,11 @@
 @extends('layout/main')
 
-@section('title', 'Gallery')
+@section('title', 'Gallery Desa Ngaglik')
 
 @section('container')
-    <h1 class="mt-3 text-center fw-bold">Gallery Foto</h1>
+    <hr>
+    <h1 class="text-center">GALLERY DESA</h1>
+    <hr>
 
     <div class="container">
     <div class="row row-cols-1 row-cols-md-3 g-4">

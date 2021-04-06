@@ -34,32 +34,67 @@
             <a class="nav-link active" aria-current="page" href="{{url('/')}}">Home</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="{{url('/profil')}}" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="{{url('#')}}" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Profil
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <li><a class="dropdown-item" href="{{url('/visimisi')}}">Visi & Misi</a></li>
               <li><a class="dropdown-item" href="{{url('/sejarah')}}">Sejarah Desa</a></li>
               <li><a class="dropdown-item" href="{{url('/dasarhukum')}}">Dasar Hukum</a></li>
+              <li><a class="dropdown-item" href="{{url('/aparatur')}}">Aparatur Desa</a></li>
               <li><a class="dropdown-item" href="{{url('/struktur')}}">Struktur Organisasi</a></li>
               <li><a class="dropdown-item" href="{{url('/artilambang')}}">Arti Lambang Desa</a></li>
               <li><a class="dropdown-item" href="{{url('/wilayah')}}">Profil Wilayah Desa</a></li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{url('/berita')}}">Berita</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="{{url('#')}}" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Informasi
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
+              <li><a class="nav-link" href="{{url('/berita')}}">Berita</a></li>
+              <li><a class="nav-link" href="{{url('/pengumuman')}}">Pengumuman</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{url('/kelembagaan')}}">Kelembagaan</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{url('/data')}}">Data</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="{{url('#')}}" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Kelembagaan
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
+              <li><a class="nav-link" href="{{url('/lembaga/lpmk')}}">Lembaga Pemberdayaan Masyarakat Kota</a></li>
+              <li><a class="nav-link" href="{{url('/lembaga/pkk')}}">Pemberdayaan Kesejahteraan Keluarga</a></li>
+              <li><a class="nav-link" href="{{url('/lembaga/kim')}}">Kelompok Informasi Masyarakat</a></li>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{url('/agenda')}}">Agenda</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{url('/gallery')}}">Gallery</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="{{url('#')}}" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Data Desa
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
+              <li><a class="dropdown-item" href="{{url('/data/data')}}">Data Statistik Penduduk</a></li>
+              <li><a class="dropdown-item" href="{{url('/data/fasilitas-umum')}}">Data Fasilitas Umum</a></li>
+              <li><a class="dropdown-item" href="{{url('/data/fasilitas-sosial')}}">Data Fasilitas Sosial</a></li>
+              <li><a class="dropdown-item" href="{{url('/data/fasilitas-ekonomi')}}">Data Fasilitas Ekonomi</a></li>
+              <li><a class="dropdown-item" href="{{url('/data/fasilitas-khusus')}}">Data Fasilitas Khusus</a></li>
+              <li><a class="dropdown-item" href="{{url('/data/poskamling')}}">Data Poskamling</a></li>
+              <li><a class="dropdown-item" href="{{url('/data/bank-sampah')}}">Data Bank Sampah</a></li>
+              <li><a class="dropdown-item" href="{{url('/data/tempat-wisata')}}">Data Tempat Wisata</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="{{url('#')}}" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Layanan
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
+              <li><a class="nav-link" href="{{url('/layanan')}}">Layanan Informasi</a></li>
+              <li><a class="nav-link" href="{{url('/layanan-administrasi')}}">Layanan Administrasi</a></li>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{url('#kontak')}}">Kontak</a>
@@ -96,6 +131,33 @@
       </div>
     </div> --}}
     
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzblTCSqNxRGQdE1SOWXaWksXwh0sxHdwJDEicmcx30753Jz0uWyV8sLa2G4VIEyfG5/exec'
+      const form = document.forms['request-form'];
+      const btnKirim = document.querySelector('.btn-kirim');
+      const btnLoading = document.querySelector('.btn-loading');
+      const myAlert = document.querySelector('.my-alert');
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        // ketika tombol submit diklik
+        // tampilkan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            // tampilkan tombol Kirim, hilangkan tombol Loading
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            // tampilkan alert
+            myAlert.classList.toggle('d-none');
+            // reset form
+            form.reset();
+            console.log('Success!', response)
+            })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
 
 </body>
 

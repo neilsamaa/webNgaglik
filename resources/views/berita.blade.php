@@ -1,6 +1,6 @@
 @extends('layout/main')
 
-@section('title', 'Berita')
+@section('title', 'Berita Desa Ngaglik')
 
 @section('container')
 
@@ -9,9 +9,10 @@
   <div class="row">
     {{-- Content Awal --}}
     <div class="col-md-8 border rounded pt-4" style="text-align: justify">
-      <h1 class="fw-bold text-center">BERITA DESA</h1>
-      <br>
-      <h5>Berita Terbaru <span class="badge bg-secondary">New</span></h5>
+      <hr>
+      <h1 class="text-center">BERITA DESA</h1>
+      <hr>
+
       <div class="card mb-3">
         <img src="1.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
